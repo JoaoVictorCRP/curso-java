@@ -1,4 +1,4 @@
-package tiposVars;
+package modulo_1.tiposVars;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package EntradaDeDados_Pt2;
+package modulo_1.EntradaDeDados_Pt2;
 
 import java.util.Scanner;
 

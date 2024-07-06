@@ -1,4 +1,4 @@
-package hello_world;
+package modulo_1.hello_world;
 
 public class Main {
 
