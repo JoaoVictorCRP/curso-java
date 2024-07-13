@@ -1,4 +1,4 @@
-package funcoes;
+package modulo_1.funcoes;
 
 import java.util.Scanner;
 
