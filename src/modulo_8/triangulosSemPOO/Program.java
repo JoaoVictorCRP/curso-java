@@ -21,7 +21,7 @@ public class Program {
 		yB = sc.nextDouble();
 		yC = sc.nextDouble();
 		
-		double p = (xA + xB + xC); // Soma dos lados
+		double p = (xA + xB + xC) / 2;
 		double areaX = Math.sqrt(p * (p-xA) * (p-xB) * (p-xC));
 	
 		p = (yA + yB + yC); 
