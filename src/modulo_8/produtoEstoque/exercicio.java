@@ -1,9 +1,6 @@
 package modulo_8.produtoEstoque;
-
-import java.lang.classfile.ClassFile.DeadCodeOption;
 import java.util.Locale;
 import java.util.Scanner;
-import modulo_8.produtoEstoque.Product;
 
 public class exercicio {
 	/* Fazer um programa para ler os dados de um produto em estoque (nome, preço e quantidade no estoque). Em seguida:
