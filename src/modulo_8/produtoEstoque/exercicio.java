@@ -13,18 +13,14 @@ public class exercicio {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		String name;
-		double price;
-		int quantity;
-		int remove, add;
 		
 		System.out.println("Enter product data: ");
 		System.out.print("Name: ");
-		name = sc.nextLine();
+		String name = sc.nextLine();
 		System.out.print("Price: ");
-		price = sc.nextDouble();
+		double price = sc.nextDouble();
 		System.out.print("Quantity: ");
-		quantity = sc.nextInt();
+		int quantity = sc.nextInt();
 		
 		Product p = new Product(name, price, quantity);
 		
@@ -33,13 +29,13 @@ public class exercicio {
 		
 		// Adding products
 		System.out.print("\nEnter number of products to be added in stock: ");
-		add = sc.nextInt();
+		int add = sc.nextInt();
 		p.addProducts(add);
 		System.out.printf("UPDATED data: %s, $ %.2f, %s units, Total Value: %s\n", p.name, p.price, p.quantity, p.totalValueInStock());
 		
 		// Removing products
 		System.out.print("\nEnter number of products to be removed from stock: ");
-		remove = sc.nextInt();
+		int remove = sc.nextInt();
 		p.removeProducts(remove);
 		System.out.printf("UPDATED data: %s, $ %.2f, %s units, Total Value: %s", p.name, p.price, p.quantity, p.totalValueInStock());
 		
