@@ -17,7 +17,6 @@ public class exercicio {
 		double price;
 		int quantity;
 		int remove, add;
-		Product p = new Product();
 		
 		System.out.println("Enter product data: ");
 		System.out.print("Name: ");
@@ -27,9 +26,7 @@ public class exercicio {
 		System.out.print("Quantity: ");
 		quantity = sc.nextInt();
 		
-		p.name = name;
-		p.price = price;
-		p.quantity = quantity;
+		Product p = new Product(name, price, quantity);
 		
 		System.out.printf("Product data: %s, $ %.2f, %s units, Total Value: %s\n", p.name, p.price, p.quantity, p.totalValueInStock());
 

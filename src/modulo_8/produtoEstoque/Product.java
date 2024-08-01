@@ -5,6 +5,12 @@ public class Product {
 	public double price;
 	public int quantity;
 	
+	public Product(String name, double price, int quantity) { // O construtor é executado no momento da instanciação do objeto, forçando assim a definição dos atributos logo de cara.
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+	}
+	
 	public double totalValueInStock() {
 		return quantity * price;
 	}
