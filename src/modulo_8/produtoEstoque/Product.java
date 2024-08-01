@@ -15,7 +15,10 @@ public class Product {
 	public Product(String name, double price) {
 		this.name = name;
 		this.price = price;
-		// Suponhamos que você queira criar uma nova instancia de um produto, porém este ainda não tem quantidade no estoque, portanto podemos inicializar apenas os valores de name e price
+		// Suponhamos que você queira criar uma nova instancia de um produto, porém este ainda não tem quantidade no estoque, 
+		// portanto podemos inicializar apenas os valores de name e price
+		
+		// Lembre-se: SOBRECARGA É DISPONIBILIZAR DUAS VERSÕES DE UMA MESMA OPERAÇÃO.
 	}
 	
 	public double totalValueInStock() {
