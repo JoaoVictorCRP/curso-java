@@ -1,7 +1,5 @@
 package modulo_8.encapsulamento;
 
-import java.lang.classfile.instruction.ReturnInstruction;
-
 public class Product {
 	// O encapsulamento tem como premissa a proteção dos atributos da classe, garantindo que o usuário (ou um colega programador)
 	// não modifique a classe de maneira danosa ao programa.
