@@ -28,19 +28,19 @@ public class Program {
 		Conta conta = new Conta(holder, accountNumber, initialDeposit);
 		
 		System.out.println("Account Data: ");
-		System.out.printf("Account: %s, Holder: %s, Balance: $%.2f\n", conta.numeroConta, conta.nome, conta.getSaldo());
+		System.out.printf("Account: %s, Holder: %s, Balance: $%.2f\n", conta.getNumeroConta(), conta.getNome(), conta.getSaldo());
 		
 		System.out.print("Enter a deposit value: ");
 		deposit = sc.nextDouble();
 		conta.deposit(deposit);
 		System.out.println("Updated account Data: ");
-		System.out.printf("Account: %s, Holder: %s, Balance: $%.2f\n", conta.numeroConta, conta.nome, conta.getSaldo());
+		System.out.printf("Account: %s, Holder: %s, Balance: $%.2f\n", conta.getNumeroConta(), conta.getNome(), conta.getSaldo());
 
 		System.out.print("Enter a withdraw value: ");
 		withdraw = sc.nextDouble();
 		conta.withdraw(withdraw);
 		System.out.println("Updated account Data: ");
-		System.out.printf("Account: %s, Holder: %s, Balance: $%.2f", conta.numeroConta, conta.nome, conta.getSaldo());
+		System.out.printf("Account: %s, Holder: %s, Balance: $%.2f", conta.getNumeroConta(), conta.getNome(), conta.getSaldo());
 
 	}
 
