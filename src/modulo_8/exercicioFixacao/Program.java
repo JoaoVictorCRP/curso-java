@@ -5,39 +5,38 @@ import java.util.Scanner;
 public class Program {
 	
 	public static void main(String[] args) {
-		int accountNumber;
-		String holder;
-		String initialDepositFlag;
-		double initialDeposit=0, deposit, withdraw;
+		Conta conta;
 		
 		// Input
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter account number: ");
-		accountNumber = sc.nextInt();
+		int accountNumber = sc.nextInt();
         sc.nextLine(); // Essa linha faz com que o `\n` que restou do input numérico seja consumido. (Lembre-se que nextInt não consome quebra de linha)
 		System.out.print("Enter account holder: ");
-		holder = sc.nextLine();
+		String holder = sc.nextLine();
 		System.out.print("Would you like to make an initial deposit? (y/n): ");
-		initialDepositFlag = sc.next();
+		char initialDepositFlag = sc.next().charAt(0);
 
-		if(initialDepositFlag.equalsIgnoreCase("y")) {
+		if(initialDepositFlag=='y') {
 			System.out.print("Enter initial deposit value: ");
-			initialDeposit = sc.nextDouble();
+			double initialDeposit = sc.nextDouble();
+			conta = new Conta(holder, accountNumber, initialDeposit);
+		} else {
+			conta = new Conta(holder, accountNumber);
 		};
-
-		Conta conta = new Conta(holder, accountNumber, initialDeposit);
+		
 		
 		System.out.println("Account Data: ");
 		System.out.printf("Account: %s, Holder: %s, Balance: $%.2f\n", conta.getNumeroConta(), conta.getNome(), conta.getSaldo());
 		
 		System.out.print("Enter a deposit value: ");
-		deposit = sc.nextDouble();
+		double deposit = sc.nextDouble();
 		conta.deposit(deposit);
 		System.out.println("Updated account Data: ");
 		System.out.printf("Account: %s, Holder: %s, Balance: $%.2f\n", conta.getNumeroConta(), conta.getNome(), conta.getSaldo());
 
 		System.out.print("Enter a withdraw value: ");
-		withdraw = sc.nextDouble();
+		double withdraw = sc.nextDouble();
 		conta.withdraw(withdraw);
 		System.out.println("Updated account Data: ");
 		System.out.printf("Account: %s, Holder: %s, Balance: $%.2f", conta.getNumeroConta(), conta.getNome(), conta.getSaldo());

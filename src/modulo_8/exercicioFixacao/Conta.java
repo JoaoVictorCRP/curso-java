@@ -11,6 +11,12 @@ public class Conta {
 		this.saldo = depositoInicial;
 	}
 	
+	public Conta(String nome, int numeroConta) {
+		this.nome = nome;
+		this.numeroConta = numeroConta;
+		this.saldo = 0;
+	}
+	
 	public double getSaldo() {
 		return saldo;
 	}
